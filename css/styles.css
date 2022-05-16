@@ -195,7 +195,16 @@ body {
 .section-n.section {
   padding-top: 200px;
   padding-bottom: 200px;
+  height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/comanda.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -531,11 +540,15 @@ footer {
 .header.header-line {
   border-bottom: 1px solid #ececec;
 }
-.studio-porf:hover,
-.studio-porf:focus {
+.studio-portf:hover,
+.studio-portf:focus {
   color: var(--accent-color);
 }
-.studio-porf {
+.studio-portf {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px; 
+
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -558,6 +571,10 @@ footer {
   overflow: hidden;
 }
 .portfo-portfo {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;

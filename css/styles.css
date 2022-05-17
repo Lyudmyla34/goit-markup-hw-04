@@ -5,6 +5,7 @@
   --background-color: #ffffff;
   --background-second-color: #2f303a;
   --background-light-icon: #f5f4fa;
+  --icon-color: #AFB1B8;
 }
 
 *,
@@ -162,11 +163,11 @@ body {
 .mail-tel-li {
   margin-right: 50px;
 }
-.icon-envelope-hover{
+.icon-envelope-hover {
   margin-right: 10px;
-    fill: currentColor;
+  fill: currentColor;
   display: flex;
-    align-items: center;
+  align-items: center;
 }
 .mail {
   display: block;
@@ -472,25 +473,39 @@ body {
 }
 .work-name-team {
   padding-top: 30px;
-  padding-bottom: 30px;  
+  padding-bottom: 30px;
 }
 
 .social-networks {
-display: flex;
-padding: auto;
-}
-
-.social-link{
   display: flex;
   justify-content: center;
-    align-items: center;
-width: 44px;
-height: 44px;
-background-color: var(--background-color);
-border-radius: 50%;
+  padding: 0;
+  margin: 0;
 }
-.social-li.list:not(:last-child){
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--background-color);
+  border-radius: 50%;
+}
+.social-li.list:not(:last-child) {
   margin-right: 10px;
+}
+.social-link:hover,
+.social-icon:hover {
+  background-color: var(--accent-color);
+  fill: var(--background-color);
+}
+.socials-link:hover .socials-icon {
+  fill: var(--background-color)
+}
+
+.social-icon {
+  fill: var(--icon-color);
 }
 
 footer {

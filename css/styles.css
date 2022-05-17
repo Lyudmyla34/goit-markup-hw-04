@@ -496,12 +496,15 @@ body {
   margin-right: 10px;
 }
 .social-link:hover,
-.social-icon:hover {
+.social-link:focus{
   background-color: var(--accent-color);
   fill: var(--background-color);
 }
-.socials-link:hover .socials-icon {
-  fill: var(--background-color)
+.social-link:hover.social-icon {
+  fill: var(--accent-color);
+}
+.social-link:focus.social-icon {
+  fill: var(--accent-color);
 }
 
 .social-icon {

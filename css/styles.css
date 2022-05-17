@@ -150,7 +150,10 @@ body {
 .mail-tel {
   display: block;
 }
-
+.mail.link {
+  display: flex;
+  align-items: center;
+}
 .mail-tel {
   margin: auto;
 
@@ -161,6 +164,7 @@ body {
   margin-right: 0;
 }
 .mail-tel-li {
+  display: flex;
   margin-right: 50px;
 }
 .mail-tel-li .icon-envelope-hover {
@@ -199,6 +203,10 @@ body {
   letter-spacing: 0.02em;
 
   color: var(--primary-text-color);
+}
+.telefon.link {
+  display: flex;
+  align-items: center;
 }
 /* секція для замовлення послуги */
 .section-n.section {
@@ -450,6 +458,8 @@ body {
   margin-right: 30px;
 
   background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .work-name {
@@ -540,7 +550,17 @@ body {
 .clients-li:not(:last-child) {
   margin-right: 30px;
 }
+.clients-li.link:hover,
+.clients-li.link:focus {
+  border: 1px solid var(--accent-color);
+}
+.clients-li.link:hover .clients-logo {
+  fill: var(--accent-color);
+}
 
+.clients-li.link:focus .clients-logo {
+  fill: var(--accent-color);
+}
 .clients-li {
   display: flex;
   justify-content: center;
@@ -555,6 +575,10 @@ body {
   height: 60px;
   fill: var(--icon-color);
 }
+.clients-a:hover,
+.clients-a:focus {
+  fill: var(--accent-color);
+}
 .clients-a {
   display: block;
 }
@@ -565,6 +589,9 @@ footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background: var(--background-second-color);
+}
+.footer-flex {
+  display: flex;
 }
 .logo-footer {
   display: block;
@@ -647,6 +674,22 @@ footer {
 
   color: rgba(255, 255, 255, 0.6);
 }
+.social-footer {
+margin-bottom: 20px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--background-color);
+}
+.footer-beatween:not(:last-child) {
+margin-right: 70px;
+}
 
 /* ПОРТФОЛІО */
 
@@ -701,6 +744,10 @@ footer {
 .buttons-portfolio:focus {
   color: var(--background-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+      0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
 }
 
 .buttons-ul {
@@ -740,7 +787,10 @@ footer {
   margin-bottom: 56px;
 }
 
-.buttons-li {
+.buttons-portfolio .link{
+  display: inline-block;
+}
+.buttons-li {  
   margin-right: 8px;
 }
 
@@ -756,6 +806,11 @@ footer {
   padding: 0;
   margin: 0;
 }
+.services-li:hover,
+.services-li:focus{
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+0px 4px 4px rgba(0, 0, 0, 0.06),
+1px 4px 6px rgba(0, 0, 0, 0.16);}
 .services-li {
   margin-right: 30px;
   margin-bottom: 30px;

@@ -871,6 +871,7 @@ footer {
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .services-li {
+  display: flex;
   margin-right: 30px;
   margin-bottom: 30px;
 }

@@ -151,9 +151,12 @@ body {
 .mail-tel {
   display: block;
 }
+
 .mail.link {
   display: flex;
   align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .mail-tel {
   margin: auto;
@@ -174,6 +177,7 @@ body {
 .icon-envelope-hover {
   display: block;
 }
+
 .icon-envelope-hover {
   margin-right: 10px;
   fill: currentColor;
@@ -208,6 +212,8 @@ body {
 .telefon.link {
   display: flex;
   align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 /* секція для замовлення послуги */
 .section-n.section {
@@ -465,6 +471,7 @@ body {
 }
 
 .work-name {
+  margin-top: 0;
   margin-bottom: 16px;
 
   font-family: "Roboto";
@@ -495,7 +502,9 @@ body {
   padding: 0;
   margin: 0;
 }
-
+.current {
+  color: var(--accent-color)
+}
 .social-link {
   display: flex;
   justify-content: center;
@@ -517,17 +526,14 @@ body {
 }
 
 .social-link:focus .social-icon {
-  fill: var(--background-color);
+  fill: var(--accent-color);
 }
 
 .social-icon {
   fill: var(--icon-color);
 }
 
-.social-icon:hover,
-.social-icon:focus {
-  fill: var(--background-color);
-}
+
 
 /* клиенти */
 .clients {
@@ -552,41 +558,49 @@ body {
 .clients-li:not(:last-child) {
   margin-right: 30px;
 }
-.clients-li.link:hover,
-.clients-li.link:focus {
+.clients-a:hover{
   border: 1px solid var(--accent-color);
+    border-radius: 4px;
 }
-.clients-li.link:hover .clients-logo {
+.clients-a:hover .clients-logo{
   fill: var(--accent-color);
+}
+.clients-a:focus .clients-logo {
+  fill: var(--accent-color);}
+
+.clients-logo:hover{
+  fill: var(--accent-color);
+}
+.clients-logo {
+  fill: var(--icon-color);
 }
 
-.clients-li.link:focus .clients-logo {
-  fill: var(--accent-color);
-}
 .clients-li {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
-  height: 92px;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
+  
 }
 .clients-logo {
+display:flex;
+  justify-content: center;
+  align-items: center;
   width: 106px;
   height: 60px;
   fill: var(--icon-color);
 }
-.clients-a:hover,
-.clients-a:focus {
-  fill: var(--accent-color);
+
+
+  .clients-a {  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;  
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
 }
-.clients-a {
-  display: block;
-}
-.clients-logo:hover {
-  fill: #03a9f4;
-}
+
 footer {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -594,6 +608,7 @@ footer {
 }
 .footer-flex {
   display: flex;
+  align-items: baseline;
 }
 .logo-footer {
   display: block;
@@ -677,13 +692,14 @@ footer {
   color: rgba(255, 255, 255, 0.6);
 }
 .social-footer {
+  margin-top: 0;
   margin-bottom: 20px;
 
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
@@ -709,7 +725,7 @@ footer {
   border-radius: 50%;
 }
 
-.social-li.list:not(:last-child) {
+.social-li-footer.list:not(:last-child) {
   margin-right: 10px;
 }
 

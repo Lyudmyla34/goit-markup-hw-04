@@ -599,6 +599,7 @@ display:flex;
   height: 92px;  
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  outline: transparent;
 }
 
 footer {
